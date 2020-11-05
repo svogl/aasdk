@@ -72,6 +72,8 @@ target_link_libraries(aasdk
                         ${OPENSSL_LIBRARIES}
                         ${WINSOCK2_LIBRARIES})
 
+INSTALL(TARGETS aasdk DESTINATION lib)
+
 if(AASDK_TEST)
     add_executable(aasdk_ut
                     ${tests_source_files}
